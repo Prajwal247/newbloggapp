@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{% url 'formpage' %}">PostBlog</a></li>
+        <li><a href="{% url 'index' %}">Homepage</a></li>
+        <li><a href="#"></a>AboutUs</li>
+        <li><a href="#"></a>Contact</li>
+        <li><a href="#"></a>Portfolio</li>
+      </ul>
+    </nav>
+  {% block content %}
+  {% endblock %}
+  </body>
+</html>

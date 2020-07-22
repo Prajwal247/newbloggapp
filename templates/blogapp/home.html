@@ -1,0 +1,18 @@
+{% extends 'blogapp/base.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron">
+    {% if name %}
+    {% for n in name %}
+    <h1 class="top">{{n.title}}</h1>
+    <p>{{n.post}}</p>
+    <p class="small">by {{n.author}}</p>
+    <p>published date: {{n.date_published}}</p>
+    {% endfor %}
+    {% else %}
+    <p>No thing to show</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

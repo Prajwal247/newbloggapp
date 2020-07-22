@@ -1,0 +1,11 @@
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li{
+  display: inline-block;
+  text-align: center; 
+
+  font-size: 30px;
+}
